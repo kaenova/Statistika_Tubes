@@ -1,0 +1,4 @@
+install.packages("summarytools", repos = "https://repo.bppt.go.id/cran/")
+install.packages("dplyr", repos = "https://repo.bppt.go.id/cran/")
+install.packages("repr", repos = "https://repo.bppt.go.id/cran/")
+install.packages("DataExplorer")
