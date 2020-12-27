@@ -1,0 +1,70 @@
+Pengolahan Data dari Statistika
+1. Pengklasifikasian data
+1. Research Question, Method, and Prediction
+3. Data Wrangler
+4. Visualisasi Data
+    4.1 Barchart
+    4.2 Histogram
+5. Mencari modus, median, dan mean, count.
+6. Kuartil, Simpangan baku, Variansi, boxplot
+7. Metode statistika deskriptif (Minggu 7)
+    7.1 Mean
+    7.2 median
+    7.3 Standar Deviasi
+    7.4 Variansi
+    7.5 Range
+    7.6 Minimum
+    7.7 Maximum
+    7.8 Sum
+    7.9 Count
+    7.10 Mendapatkan kesimpulan dari data yang diolah
+8. Diagram batang, heatmap, dan diagram garis
+9. Scatter Plot
+10. Korelasi
+
+==================
+Dataset (Data yang ada):
+1. Customer Age
+2. Gender
+3. Dependent Count(Demographic variable - Number of dependents, mungkin banyaknya pemegang)
+4. Education Level
+5. Martial Status (SUdah Menikah, Single atau Unknown)
+6. Income category
+7. Card Category
+8. Months on Book (sudah berapa lama menggunakannya satuan bulan)
+9. Total Relationship Count(Total no. of products held by the customer)
+10. Months Inactive 12 mon (No. of months inactive in the last 12 months)
+11. Contact Count 12 mon (No. of Contacts in the last 12 months, masi gangerti)
+12. Card Limit (limitasi dari kartu kreditnya)
+13. Total Revolving Bal (Total Revolving Balance on the Credit Card)
+14. Avg Open to Buy (Open to Buy Credit Line (Average of last 12 months))
+15. Total Amount Change Q4 Q1 (Change in Transaction Amount (Q4 over Q1))
+16. Total Trans Ct (Banyaknya transaksi)
+17. Total Ct Change Q4 Q1 (Change in Transaction Count (Q4 over Q1))
+18. Avg Utilization Ratio (Average Card Utilization Ratio)
+
+Ide Pengolahan Data:
+1. Hubungan Martial Status, Income Category, Card Category, Credit Limit, Total Trans Ct, Total Amount Change Q4Q1 untuk mencari tahu dibutuhkannya card yang terbaru dengan limit yang lebih tinggi. Bisa dilihat dari Credit Card Utilization (poin 18)
+
+2. Keterhubungan Customer Age, Gender, Martial Status, Total Amount Change, Total Trans Ct. Bisa kita lihat kartu yang seperti apa yang dibutuhkan pada umur2 tertentu, dengan pengklasifikasian.
+
+==================
+R Programming
+1.  Cara mendapatkan kolom dari sautu data frame
+    cth. BankChurners$[Kolom] artinya dari dataframe BankChurners, kita ambil kolom
+
+2.  plot(x, y
+        col = "XXXX", #XXX= HexCode warna
+        main = "[Judul]",
+        xlab = "[Label Sumbu X]",
+        ylab = "[Label Sumbu Y]",
+        lwd = [Jika menggunakan line, bisa mengatur besar line nya])
+
+    plot(cos, 0, 2*pi)
+    plot(exp, 1, 5)
+    plot(dnorm, -3, +3)
+
+3.  #Installing and Loading a Package
+    install.packages(pacman)
+    require(pacman)
+
